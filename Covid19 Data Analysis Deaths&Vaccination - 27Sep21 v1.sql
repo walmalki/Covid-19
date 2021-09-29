@@ -1,5 +1,6 @@
---select * from covidDeaths
---order by location,date;
+select * from covidDeaths
+where continent is not null
+order by location,date;
 
 --select * from covidVaccinations
 --order by location,date;
@@ -144,3 +145,6 @@ join [dbo].[covidVaccinations] vac
 	on dea.location = vac.location
 	and dea.date = vac.date
 where dea.continent is not null;
+
+select * 
+from PercentPopulationVaccinated;
