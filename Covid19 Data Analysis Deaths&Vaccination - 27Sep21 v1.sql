@@ -1,3 +1,10 @@
+/*
+Date: 27th of September 2021
+Analyst: Waleed Almalki
+Open Source Database: https://ourworldindata.org/covid-deaths
+Goal: Count the number of deaths and vaccination of Covid-19 around the world
+*/
+
 select * from covidDeaths
 where continent is not null
 order by location,date;
